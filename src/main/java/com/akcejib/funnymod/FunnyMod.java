@@ -1,5 +1,6 @@
 package com.akcejib.funnymod;
 
+import com.akcejib.funnymod.init.ModBlocks;
 import com.akcejib.funnymod.proxy.CommonProxy;
 import com.akcejib.funnymod.reference.Reference;
 
@@ -19,6 +20,7 @@ public class FunnyMod {
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		ModBlocks.init();
 		proxy.preInit();
 	}
 
