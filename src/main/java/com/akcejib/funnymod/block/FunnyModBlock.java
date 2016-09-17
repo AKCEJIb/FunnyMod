@@ -5,9 +5,11 @@ import net.minecraft.block.material.Material;
 
 public class FunnyModBlock extends Block {
 
-	public FunnyModBlock(Material material, String name) {
+	public FunnyModBlock(Material material) {
 		super(material);
-		setBlockName(name);
+	}
+	public FunnyModBlock() {
+		super(Material.rock);
 	}
 
 }

@@ -1,17 +1,16 @@
 package com.akcejib.funnymod.init;
 
-import com.akcejib.funnymod.block.BlockTestBlock;
-import com.akcejib.funnymod.block.FunnyModBlock;
+import com.akcejib.funnymod.block.BlockEPC;
 import com.akcejib.funnymod.utility.Names;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.Block;
 
 public class ModBlocks {
 
-	public static final FunnyModBlock testBlock = new BlockTestBlock(Material.rock, Names.Blocks.TEST_BLOCK);
+	public static final Block blockEPC = new BlockEPC();
 
 	public static void init() {
-		GameRegistry.registerBlock(testBlock, Names.Blocks.TEST_BLOCK);
+		GameRegistry.registerBlock(blockEPC, Names.Blocks.EPC);
 	}
 }

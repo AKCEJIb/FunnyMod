@@ -1,23 +1,32 @@
 package com.akcejib.funnymod.proxy;
 
+import com.akcejib.funnymod.tileentity.TileEntityEPC;
+import com.akcejib.funnymod.tileentity.render.RendererEPC;
+
+import cpw.mods.fml.client.registry.ClientRegistry;
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.player.EntityPlayer;
+
 public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void preInit() {
-		// TODO Auto-generated method stub
-		
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEPC.class, new RendererEPC());
 	}
 
 	@Override
 	public void init() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void postInit() {
-		// TODO Auto-generated method stub
-		
+
+	}
+
+	@Override
+	public EntityPlayer getClientPlayer() {
+		return Minecraft.getMinecraft().thePlayer;
 	}
 
 }
