@@ -17,7 +17,7 @@ public class ItemAmphetamine extends ItemDrugsFunnyMod {
 		super.onEaten(stack, world, player);
 		player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 10 * 20, 1));
 		player.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 10 * 20, 1));
-		player.addPotionEffect(new PotionEffect(Potion.confusion.id, 10 * 20, 1));
+		player.addPotionEffect(new PotionEffect(Potion.confusion.id, 20 * 20, 1));
 		return stack;
 	}
 }

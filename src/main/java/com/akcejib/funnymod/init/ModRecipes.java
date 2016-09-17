@@ -26,8 +26,8 @@ public class ModRecipes {
 
 		// -- blocks
 		// BLOCK: EnderPort Charger
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.blockEPC), new Object[] { "RRR", "DCD", "RRR", 'R',
-				Blocks.redstone_block, 'D', Blocks.diamond_block, 'C', Blocks.chest });
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.blockEPC), new Object[] { "FRF", "DCD", "FRF", 'R',
+				Blocks.redstone_block, 'D', Blocks.diamond_block, 'C', Blocks.chest, 'F', Items.ender_pearl });
 
 		// Shapeless Recipe
 

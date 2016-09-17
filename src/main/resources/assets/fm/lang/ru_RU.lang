@@ -1,12 +1,12 @@
 tile.blockEPC.name=ЭндерТелепорт зарядник
 
-item.itemEnderPort.name=ЭндерТелепорт
-item.itemDoritosPack.name=Пачка доритоса
-item.itemDoritos.name=Доритос
-item.itemDoritosMLG.name=Доритос (MLG EDITION)
-item.itemAmphetamine.name=Амфетамин
-item.itemAntibiotics.name=Антибиотики
-item.itemInjector.name=Шприц
+item.EnderPort.name=ЭндерТелепорт
+item.DoritosPack.name=Пачка доритоса
+item.Doritos.name=Доритос
+item.DoritosMLG.name=Доритос (MLG EDITION)
+item.Amphetamine.name=Амфетамин
+item.Antibiotics.name=Антибиотики
+item.Injector.name=Шприц
 
 gui.funnymod.EPC.energyStored=Энергия: %s
 

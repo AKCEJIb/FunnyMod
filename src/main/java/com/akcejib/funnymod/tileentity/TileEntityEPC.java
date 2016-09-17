@@ -16,6 +16,7 @@ import net.minecraft.nbt.NBTTagList;
 
 public class TileEntityEPC extends TileEntityFunnyMod implements IInventory {
 	private ItemStack[] itemStacks = new ItemStack[2];
+	private int side;
 	private int energy = 0;
 	private final int maxEnergy = 1500;
 
@@ -49,6 +50,14 @@ public class TileEntityEPC extends TileEntityFunnyMod implements IInventory {
 
 	public ItemStack[] getItemStacks() {
 		return itemStacks;
+	}
+
+	public void setSide(int value) {
+		side = value;
+	}
+
+	public int getSide() {
+		return side;
 	}
 
 	public static int getItemEnergy(ItemStack stack) {
@@ -87,7 +96,7 @@ public class TileEntityEPC extends TileEntityFunnyMod implements IInventory {
 	public void readFromPacket(ByteBuf buf) {
 		for (int i = 0; i < itemStacks.length; i++)
 			itemStacks[i] = ByteBufUtils.readItemStack(buf);
-
+		worldObj.markBlockRangeForRenderUpdate(xCoord, yCoord, zCoord, xCoord, yCoord, zCoord);
 	}
 
 	@Override
@@ -178,6 +187,7 @@ public class TileEntityEPC extends TileEntityFunnyMod implements IInventory {
 		}
 
 		this.markDirty();
+		worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
 	}
 
 	@Override

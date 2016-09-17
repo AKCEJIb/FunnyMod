@@ -8,13 +8,13 @@ public class Names {
 	}
 
 	public static class Items {
-		public static final String INJECTOR = "itemInjector";
-		public static final String ANTIBIOTICS = "itemAntibiotics";
-		public static final String AMPHETAMINE = "itemAmphetamine";
-		public static final String ENDERPORT = "itemEnderPort";
-		public static final String DORITOS = "itemDoritos";
-		public static final String DORITOS_MLG = "itemDoritosMLG";
-		public static final String DORITOS_PACK = "itemDoritosPack";
+		public static final String INJECTOR = "Injector";
+		public static final String ANTIBIOTICS = "Antibiotics";
+		public static final String AMPHETAMINE = "Amphetamine";
+		public static final String ENDERPORT = "EnderPort";
+		public static final String DORITOS = "Doritos";
+		public static final String DORITOS_MLG = "DoritosMLG";
+		public static final String DORITOS_PACK = "DoritosPack";
 	}
 
 	public static class TileEntities {

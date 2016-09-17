@@ -1,12 +1,12 @@
 tile.blockEPC.name=EnderPort Charger
 
-item.itemEnderPort.name=EnderTeleport
-item.itemDoritosPack.name=Doritos Pack
-item.itemDoritos.name=Doritos
-item.itemDoritosMLG.name=Doritos (MLG EDITION)
-item.itemAmphetamine.name=Amphetamine
-item.itemAntibiotics.name=Antibiotics
-item.itemInjector.name=Injector
+item.EnderPort.name=EnderTeleport
+item.DoritosPack.name=Doritos Pack
+item.Doritos.name=Doritos
+item.DoritosMLG.name=Doritos (MLG EDITION)
+item.Amphetamine.name=Amphetamine
+item.Antibiotics.name=Antibiotics
+item.Injector.name=Injector
 
 gui.funnymod.EPC.energyStored=Energy: %s
 

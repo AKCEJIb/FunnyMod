@@ -155,6 +155,8 @@ public class BlockEPC extends FunnyModBlockTileEntity {
 	@Override
 	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack) {
 		int l = MathHelper.floor_double(entity.rotationYaw * 4.0F / 360.0F + 0.5D) & 3;
+		TileEntityEPC te = (TileEntityEPC) world.getTileEntity(x, y, z);
+		te.setSide(l);
 
 		if (l == 0) {
 			world.setBlockMetadataWithNotify(x, y, z, 2, 2);

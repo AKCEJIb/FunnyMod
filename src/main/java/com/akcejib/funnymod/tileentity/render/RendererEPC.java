@@ -47,22 +47,21 @@ public class RendererEPC extends TileEntitySpecialRenderer {
 
 	private void renderItems(TileEntityEPC te, double x, double y, double z, float scale) {
 		if (te.getItemStacks()[0] != null && te.getItemStacks()[0].getItem() != null) {
-			doRenderItem(te.getItemStacks()[0], x, y, z);
+			doRenderItem(te.getItemStacks()[0], x, y, z, te.getSide());
 		}
 	}
 
-	public void doRenderItem(ItemStack itemstack, double x, double y, double z) {
+	public void doRenderItem(ItemStack itemstack, double x, double y, double z, int side) {
 
 		EntityItem item = new EntityItem(null);
 		item.age = 0;
 		item.hoverStart = (float) (Math.PI * 2.0F);
 		item.setEntityItemStack(itemstack);
-
 		GL11.glPushMatrix();
 		GL11.glTranslatef((float) x, (float) y, (float) z);
 		GL11.glTranslatef(0.5F, 1.02F, 0.415F);
 		GL11.glScalef(0.7F, 0.7F, 0.7F);
-		GL11.glRotatef(90.0F, 90.0F, 0.0F, 0.0F);
+		GL11.glRotatef(90.0F, 90F, 0.0F, 0.0F);
 		customRenderItem.doRender(item, 0, 0, 0, 0, 0);
 		GL11.glPopMatrix();
 	}
